@@ -14,6 +14,8 @@ DEST=$1
 # Download WP Core.
 wp core download --locale=fr_FR
 
+composer install
+
 # Generate the wp-config.php file
 wp core config --dbhost=localhost --dbname=$DEST --dbuser=$DB_USER --dbpass=$DB_PASS --dbprefix=wps_ --locale=fr_FR --extra-php <<PHP
 define('WP_DEBUG_LOG', true);
@@ -41,6 +43,7 @@ echo Deleting junk plugins...
 rm -r wp-content/plugins/hello.php
 rm -r wp-content/plugins/akismet
 echo
+
 
 
 open $BASE_URL/$DEST
