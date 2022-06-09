@@ -30,8 +30,9 @@ index.php
 wp-content/languages/
 wp-content/plugins/
 wp-content/themes/*
-
-
+wp-content/mu-plugins/vendor/
+wp-content/uploads/
+wp-content/debug.log
 
 #Configuration
 /wp-config.php

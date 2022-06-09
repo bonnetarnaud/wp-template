@@ -10,7 +10,6 @@ fi
 
 DEST=$1
 
-
 # Download WP Core.
 wp core download --locale=fr_FR
 
@@ -44,6 +43,8 @@ rm -r wp-content/plugins/hello.php
 rm -r wp-content/plugins/akismet
 echo
 
+wp plugin install woocommerce --activate
+wp language plugin install woocommerce fr_FR
 
 
 open $BASE_URL/$DEST
