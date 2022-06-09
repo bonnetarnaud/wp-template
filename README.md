@@ -1,15 +1,17 @@
-## introduction
+## Introduction
+Template wordpress 
 
-## install
+## Install
 
-Clone project
+
 
 ```console 
+# Clone project
 git clone https://github.com/bonnetarnaud/wp-template.git <Name-Folder>
 ```
 
-Lunch sh script
 ```console 
+# Lunch sh script
 sh install-wp.sh "<Name-Folder>"
 ```
 
